@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <title>Form Validation</title>
+    <script>
+        function validateForm(event)
+        {
+         event.preventDafault();
+         var username=document.getElementById("uname").value;
+         var password=document.getAnimations("pass").value;
+         if(username ==="vino" && password ==="2004")
+         {
+            alert("Verification Completed!");
+         }
+         else
+         {
+            alert("Invalid Username or Password.");
+         }
+        }
+    </script>
+    </head>
+    <body>
+        <h1>Login Form</h1>
+        <form onsubmit="validateForm(event)">
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="username"required>
+            <br>
+            <br>
+            <label for ="pass">Password:</label>
+            <input type ="password" id="pass" name="password" required>
+            <br>
+            <br>
+            <input type="submit" value="login">
+        </form>
+    </body>
+</html>
